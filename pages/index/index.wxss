@@ -96,25 +96,46 @@
 .topList {
   padding: 20rpx;
 }
- .swiperItem .title {
+
+.topListSwiper {
+  height: 400rpx;
+}
+
+.swiperItem {
+  width: 96%;
+  background-color: #fbfbfb;
+}
+
+.swiperItem .title {
   font-size: 30rpx;
   line-height: 80rpx;
 }
-.musicItem{
+
+.musicItem {
   display: flex;
-  align-items: center;
+  margin-bottom: 10rpx;
+  /* align-items: center; */
 }
-.musicItem image{
+
+.musicItem image {
   width: 100rpx;
   height: 100rpx;
+  border-radius: 6rpx;
 }
-.musicItem .count{
+
+.musicItem .count {
   width: 100rpx;
   height: 100rpx;
   text-align: center;
   line-height: 100rpx;
 }
-.musicItem .musicName{
+
+.musicItem .musicName {
   height: 100rpx;
+  width: 400rpx;
   line-height: 100rpx;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

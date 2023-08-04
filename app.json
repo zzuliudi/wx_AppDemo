@@ -1,7 +1,11 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": [
+    "pages/index/index",
+    "pages/video/video",
+    "pages/personal/personal"
+  ],
   "style": "v2",
-  "sitemapLocation":"sitemap.json",
+  "sitemapLocation": "sitemap.json",
   "window": {
     "navigationBarBackgroundColor": "#d43c33",
     "navigationBarTextStyle": "white",

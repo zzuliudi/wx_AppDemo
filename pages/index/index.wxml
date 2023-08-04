@@ -43,24 +43,14 @@
   <!-- 排行榜 -->
   <view class="topList">
     <NavHeader title="排行榜" nav="热歌风向标"></NavHeader>
-    <swiper class="topListSwiper">
-      <swiper-item>
+    <swiper class="topListSwiper" circular next-margin="50rpx" previous-margin="50rpx">
+      <swiper-item wx:for="{{topList}}">
         <view class="swiperItem">
-          <view class="title">风云榜</view>
-          <view class="musicItem">
-            <image src="../../static/images/avatar/3.png"></image>
-            <text class="count">1</text>
-            <text class="musicName">哎哎哎</text>
-          </view>
-          <view class="musicItem">
-            <image src="../../static/images/avatar/3.png"></image>
-            <text class="count">1</text>
-            <text class="musicName">哎哎哎</text>
-          </view>
-          <view class="musicItem">
-            <image src="../../static/images/avatar/3.png"></image>
-            <text class="count">1</text>
-            <text class="musicName">哎哎哎</text>
+          <view class="title">{{item.name}}</view>
+          <view class="musicItem" wx:for="{{item.tracks}}" wx:for-item="track" wx:key="id">
+            <image src="{{track.al.picUrl}}"></image>
+            <text class="count">{{index+1}}</text>
+            <text class="musicName">{{track.name}}</text>
           </view>
         </view>
       </swiper-item>
